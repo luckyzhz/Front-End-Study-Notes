@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>阿智-前端学习笔记</title>
+  <link rel="icon" href="_logo/zhi-logo.svg">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="阿智-前端学习笔记">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
@@ -17,15 +18,22 @@
     .sidebar-nav li.active {
       font-weight: bold;
     }
+
+    /* 侧边栏 logo 尺寸 */
+    .app-name-link > img:nth-child(1) {
+      max-height: 2em;
+    }
   </style>
 </head>
 <body>
   <div id="app"></div>
   <script>
     window.$docsify = {
-      name: '阿智-前端学习笔记',
+      name: '<img src="_logo/zhi-logo.svg" alt="logo"><br>阿智-前端学习笔记',
       repo: 'luckyzhz/front-end-study-notes',
+      // logo: '_logo/zhi-logo.svg',
       loadSidebar: true,
+      autoHeader: true, // 由侧边栏目录自动为对应页面生成一级标题
       subMaxLevel: 2,
       auto2top: true,
       formatUpdated: '{YYYY}-{MM}-{DD}',

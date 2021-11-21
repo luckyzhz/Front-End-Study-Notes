@@ -11,6 +11,7 @@
   * [04-列表（list）](01-html/04-列表（list）.md)
   * [05-表格（table）](01-html/05-表格（table）.md)
   * [06-表单（form）](01-html/06-表单（form）.md)
+  * [07-元数据（metadata）](01-html/07-元数据（metadata）.md)
 * 02-css
   * [01-css介绍](02-css/01-css介绍.md)
 * 03-JavaScript

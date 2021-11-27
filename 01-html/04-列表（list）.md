@@ -8,7 +8,7 @@
 
 <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="xxLBoRe" data-editable="true" data-user="luckyzhz" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/luckyzhz/pen/xxLBoRe">
-  ref_01-html_04-列表（list）_&lt;ol&gt;</a> by luckyzhz (<a href="https://codepen.io/luckyzhz">@luckyzhz</a>)
+  ref_01-HTML_04-列表（list）_&lt;ol&gt;</a> by luckyzhz (<a href="https://codepen.io/luckyzhz">@luckyzhz</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
@@ -19,12 +19,12 @@
 
 <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="qBXvzRz" data-editable="true" data-user="luckyzhz" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/luckyzhz/pen/qBXvzRz">
-  ref_01-html_04-列表（list）_&lt;ol&gt;_2</a> by luckyzhz (<a href="https://codepen.io/luckyzhz">@luckyzhz</a>)
+  ref_01-HTML_04-列表（list）_&lt;ol&gt;_2</a> by luckyzhz (<a href="https://codepen.io/luckyzhz">@luckyzhz</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
-注意 `reversed` 属性不需要值，这个属性存在就表示要倒序。另外，可以使用 css 的 `list-style-type` 属性设置编号的类型，例如设为字母或罗马数字等，待到 css 章节再讲。
+注意 `reversed` 属性不需要值，这个属性存在就表示要倒序。另外，可以使用 CSS 的 `list-style-type` 属性设置编号的类型，例如设为字母或罗马数字等，待到 CSS 章节再讲。
 
 ## 无序列表（unordered list）
 
@@ -32,12 +32,12 @@
 
 <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="dyzrBzP" data-editable="true" data-user="luckyzhz" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/luckyzhz/pen/dyzrBzP">
-  ref_01-html_04-列表（list）_&lt;ul&gt;</a> by luckyzhz (<a href="https://codepen.io/luckyzhz">@luckyzhz</a>)
+  ref_01-HTML_04-列表（list）_&lt;ul&gt;</a> by luckyzhz (<a href="https://codepen.io/luckyzhz">@luckyzhz</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
-可以看到，无序列表同样使用 `<li>` 标签作为条目。条目前的标记同样可以通过 css 的 `list-style-type` 属性设置，甚至可以用自定义图片作为条目标记。
+可以看到，无序列表同样使用 `<li>` 标签作为条目。条目前的标记同样可以通过 CSS 的 `list-style-type` 属性设置，甚至可以用自定义图片作为条目标记。
 
 ## 描述列表（description list）
 
@@ -45,7 +45,7 @@
 
 <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="bGrZPrr" data-editable="true" data-user="luckyzhz" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/luckyzhz/pen/bGrZPrr">
-  ref_01-html_04-列表（list）_&lt;dl&gt;</a> by luckyzhz (<a href="https://codepen.io/luckyzhz">@luckyzhz</a>)
+  ref_01-HTML_04-列表（list）_&lt;dl&gt;</a> by luckyzhz (<a href="https://codepen.io/luckyzhz">@luckyzhz</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
@@ -54,7 +54,7 @@
 
 <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="JjyzQyQ" data-editable="true" data-user="luckyzhz" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/luckyzhz/pen/JjyzQyQ">
-  ref_01-html_04-列表（list）_&lt;dl&gt;_2</a> by luckyzhz (<a href="https://codepen.io/luckyzhz">@luckyzhz</a>)
+  ref_01-HTML_04-列表（list）_&lt;dl&gt;_2</a> by luckyzhz (<a href="https://codepen.io/luckyzhz">@luckyzhz</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>

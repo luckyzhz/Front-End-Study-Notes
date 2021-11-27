@@ -1,8 +1,8 @@
-> 在 css 中，所有元素都被一个个的“盒子”（box）包围着。
+> 在 CSS 中，所有元素都被一个个的“盒子”（box）包围着。
 
 ## 盒模型（box model）
 
-css 标准盒模型由 4 部分组成：
+CSS 标准盒模型由 4 部分组成：
 
 * Content box: 这个区域用来显示内容，大小可通过 `width` 和 `height` 设置。
 * Padding box: 包围在内容区域外部的空白区域，大小通过 `padding` 相关属性设置。
@@ -11,7 +11,7 @@ css 标准盒模型由 4 部分组成：
 
 如图：
 
-![css 盒模型](../_images/css_box.png ':size=400')
+![CSS 盒模型](../_images/CSS_box.png ':size=400')
 
 注意，在标准模型中，`width` 和 `height` 设置的是 content box。整个盒子的大小还要加上 padding 和 border。
 
@@ -19,7 +19,7 @@ css 标准盒模型由 4 部分组成：
 
 例如：
 
-```css
+```CSS
 .box {
     width: 300px;
     height: 150;
@@ -39,8 +39,8 @@ css 标准盒模型由 4 部分组成：
 
 如果希望所有元素都使用替代模型，可以设置 `<html>` 元素的 `box-sizing`，然后设置所有元素都继承该属性。代码如下：
 
-```css
-html {
+```CSS
+HTML {
   box-sizing: border-box;
 }
 *, *::before, *::after {
@@ -65,7 +65,7 @@ margin 可以是负值，如下例：
 
 <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="gOxJMmp" data-editable="true" data-user="luckyzhz" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/luckyzhz/pen/gOxJMmp">
-  05-css盒模型_block_box</a> by luckyzhz (<a href="https://codepen.io/luckyzhz">@luckyzhz</a>)
+  05-CSS盒模型_block_box</a> by luckyzhz (<a href="https://codepen.io/luckyzhz">@luckyzhz</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
@@ -78,7 +78,7 @@ border、padding 同样可以只设置某一边，例如 `border-left: red solid
 
 <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="MWvdeqX" data-editable="true" data-user="luckyzhz" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/luckyzhz/pen/MWvdeqX">
-  05-css盒模型_border</a> by luckyzhz (<a href="https://codepen.io/luckyzhz">@luckyzhz</a>)
+  05-CSS盒模型_border</a> by luckyzhz (<a href="https://codepen.io/luckyzhz">@luckyzhz</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
@@ -105,7 +105,7 @@ border 的属性：
 
 <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="ExvzyrM" data-editable="true" data-user="luckyzhz" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/luckyzhz/pen/ExvzyrM">
-  05-css盒模型_inline_box</a> by luckyzhz (<a href="https://codepen.io/luckyzhz">@luckyzhz</a>)
+  05-CSS盒模型_inline_box</a> by luckyzhz (<a href="https://codepen.io/luckyzhz">@luckyzhz</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
@@ -124,7 +124,7 @@ border 的属性：
 
 <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="abyrZrr" data-editable="true" data-user="luckyzhz" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/luckyzhz/pen/abyrZrr">
-  05-css盒模型_inline-block</a> by luckyzhz (<a href="https://codepen.io/luckyzhz">@luckyzhz</a>)
+  05-CSS盒模型_inline-block</a> by luckyzhz (<a href="https://codepen.io/luckyzhz">@luckyzhz</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>

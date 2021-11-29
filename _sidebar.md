@@ -21,5 +21,6 @@
   * [06-CSS选择器](02-CSS/06-CSS选择器.md)
   * [07-优先级](02-CSS/07-优先级.md)
   * [08-浮动（float）](02-CSS/08-浮动（float）.md)
+  * [09-定位（position）](02-CSS/09-定位（position）.md)
 * 03-JavaScript
   * [01-JavaScript介绍](03-JavaScript/01-JavaScript介绍.md)

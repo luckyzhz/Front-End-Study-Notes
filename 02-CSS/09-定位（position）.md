@@ -57,16 +57,16 @@ CSS `position` 属性用于指定一个元素在文档中的**定位方式**。`
 
 `position: sticky;` 表示粘性定位。粘性定位可以被认为是**相对定位**和**固定定位**的混合。
 
-元素在超过**特定阈值**前为相对定位，之后为固定定位，直到它到达其父元素的边界（也就是说，父容器的边界可以把粘性定位的元素推出可视区域）。
+元素在超过**特定阈值**前为相对定位，之后为固定定位（相对的是最近的**可滚动祖先**），直到它到达其父元素的边界（也就是说，**父容器的边界可以把粘性定位的元素推出可视区域**）。
 
-<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="JjrPgxz" data-editable="true" data-user="luckyzhz" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/luckyzhz/pen/JjrPgxz">
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="GRMRgmK" data-editable="true" data-user="luckyzhz" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/luckyzhz/pen/GRMRgmK">
   09-定位（position）_sticky</a> by luckyzhz (<a href="https://codepen.io/luckyzhz">@luckyzhz</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
-上例中，在粘性定位元素和其父元素的上边界距离 1em 之前，元素为相对定位；之后，元素将固定在与父元素的上边界距离 1em 的位置。
+上例中，在粘性定位元素和视口 view port 的上边界距离 1em 之前，元素为相对定位；之后，元素将固定在与 view port 的上边界距离 1em 的位置。
 
 须指定 `top`, `right`, `bottom` 或 `left` 四个阈值其中之一，才可使粘性定位生效。否则其行为与相对定位相同。
 
@@ -83,7 +83,7 @@ CSS `position` 属性用于指定一个元素在文档中的**定位方式**。`
 
 也就是说，上例中**每个粘性定位元素都有独属的父元素**。
 
-这样做是为了，当描述列表离开可视区域时，其内部的粘性定位元素能被描述列表的下边界推出可视区域，从而避免多个粘性定位的 `<dt>` 重叠。*（为了展示这个特点，特地给每个描述列表加了边框）*
+这样做是为了，当每个描述列表离开可视区域时，其内部的粘性定位元素能被描述列表的下边界推出可视区域，从而避免多个粘性定位的 `<dt>` 重叠。*（为了展示这个特点，特地给每个描述列表加了边框）*
 
 
 

@@ -89,7 +89,7 @@ CSS 属性选择器通过已经存在的属性名或属性值匹配元素。例�
 
 交集选择器就是把元素选择器（Type selector）和其他基本选择器连写。例如：
 
-```CSS
+```css
 a.green { /* 选择 class 属性里有 green 值的 <a> 元素 */
   color: green;
 }
@@ -172,7 +172,7 @@ li[title] { /* 选择有 title 属性的 <li> 元素 */
 
 另一个常用的伪类是 `:nth-child(an+b)` （n = 0，1，2，3...）。例如：
 
-```CSS
+```css
 li:nth-child(0n+3) {  /* 匹配兄弟中排行第三的 <li>。括号里也可以直接写 3 */
   color: red;
 }

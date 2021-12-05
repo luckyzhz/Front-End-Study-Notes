@@ -59,7 +59,7 @@
 我们可以把上面 `<style>` 标签里的内容复制到一份独立的文件，然后另存为
 扩展名为 `.css` 的文件，例如 *main.css*。文件内容如下：
 
-```CSS
+```css
 p {
     color: red;
     background-color: blue;
@@ -68,7 +68,7 @@ p {
 
 然后再用 `<link>` 标签引入：
 
-```HTML
+```html
 <head>
     <link rel="stylesheet" href="main.css">
 </head>

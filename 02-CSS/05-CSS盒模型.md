@@ -19,7 +19,7 @@ CSS 标准盒模型由 4 部分组成：
 
 例如：
 
-```CSS
+```css
 .box {
     width: 300px;
     height: 150;
@@ -39,8 +39,8 @@ CSS 标准盒模型由 4 部分组成：
 
 如果希望所有元素都使用替代模型，可以设置 `<html>` 元素的 `box-sizing`，然后设置所有元素都继承该属性。代码如下：
 
-```CSS
-HTML {
+```css
+html {
   box-sizing: border-box;
 }
 *, *::before, *::after {

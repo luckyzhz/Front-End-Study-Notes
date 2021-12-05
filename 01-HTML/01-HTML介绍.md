@@ -10,7 +10,7 @@ HTML 是“超文本标记语言”（HyperText Markup Language）的缩写。HT
 
 HTML 主要包含 `<head>` 和 `<body>` 两部分。其中 `<head>` 一般放置元数据和外部链接等。`<body>` 部分才是我们在浏览器里看到的部分。如下：
 
-```HTML
+```html
 <!DOCTYPE html> <!-- 告知浏览器按照最新的 HTML 规范来解析这个 HTML 文件 -->
 <html>
     <head>

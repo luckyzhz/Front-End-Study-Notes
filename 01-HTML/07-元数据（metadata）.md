@@ -9,7 +9,7 @@
 如果没有设置 `<base>` 标签，则 baseURI 指向当前文件所在目录。
 例如：
 
-```HTML
+```html
 <head>
     <base href="http://www.example.com/">   <!-- 指定基链 -->
     <base target="_blank">  <!-- 指定相对链接默认在新窗口打开 -->
@@ -23,7 +23,7 @@
 
 注意，`<base>` 是单标签。另外，也可以把属性写在一起。例如：
 
-```HTML
+```html
 <base target="_blank" href="http://www.example.com/">
 ```
 
@@ -34,7 +34,7 @@
 
 > 小技巧：
 > 如果我们想要页面上的链接默认在新标签页打开，可以设置：
-> ```HTML
+> ```html
 > <base target="_blank">
 > ```
 
@@ -42,7 +42,7 @@
 
 `<link>` 规定了当前文档与外部资源的关系，最常用于链接样式表（CSS），或创建站点图标。例如：
 
-```HTML
+```html
 <head>
     <link rel="stylesheet" href="main.css">
     <link rel="icon" href="_logo/zhi-logo.svg">
@@ -58,7 +58,7 @@
 `<meta>` 最重要的作用是指定文档的字符编码。此外，还能指定网页的作者（author），关键字（keywords），描述（description）等，这些数据有利于 SEO（搜索引擎优化）。
 例如：
 
-```HTML
+```html
 <head>
     <!-- 应该坚持指定字符编码，否则很可能导致乱码。
     最常用的字符编码是 "utf-8" -->
@@ -79,7 +79,7 @@
 
 还能用来定时刷新页面（慎重使用）。例如：
 
-```HTML
+```html
 <head>
     <!-- 每30秒钟刷新当前页面 -->
     <meta http-equiv="refresh" content="30">
@@ -91,7 +91,7 @@
 
 在响应式布局中，经常要设置这样“视口”（viewport）元数据：
 
-```HTML
+```html
 <head>
     <!-- 视口宽度设为设备宽度，初始缩放比例为 1.0 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -104,7 +104,7 @@
 
 前面讲的元数据相关标签都是单标签，而 `<title>` 是双标签，因为需要包含文字。例如：
 
-```HTML
+```html
 <head>
     <!-- 设置页面标题是必须的，也有利于 SEO -->
     <title>阿智-前端学习笔记</title>

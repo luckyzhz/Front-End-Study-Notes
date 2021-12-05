@@ -12,6 +12,7 @@
   * [05-表格（table）](01-HTML/05-表格（table）.md)
   * [06-表单（form）](01-HTML/06-表单（form）.md)
   * [07-元数据（metadata）](01-HTML/07-元数据（metadata）.md)
+  * [08-多媒体](01-HTML/08-多媒体.md)
 * 02-CSS
   * [01-CSS介绍](02-CSS/01-CSS介绍.md)
   * [02-如何引入CSS](02-CSS/02-如何引入CSS.md)

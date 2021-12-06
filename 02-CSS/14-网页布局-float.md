@@ -8,7 +8,7 @@
 
 ## 语义化的 HTML
 
-传统上，是利用 `<div>` 元素和 `class` 属性实现网页分区，例如 `<div class="header"`>。这里，我们使用最新的语义化标签，这样即能更好地体现 HTML 文档结构，又有利于 SEO。
+传统上，是利用 `<div>` 元素和 `class` 属性实现网页分区，例如 `<div class="header"`>。这里，我们使用最新的语义化标签，这样既能更好地体现 HTML 文档结构，又有利于 SEO。
 
 ```html
 <!DOCTYPE html>
@@ -248,7 +248,7 @@ footer>h2 {
 }
 ```
 
-关于 float 的坍缩，可参考 [clear 技巧](02-CSS/08-浮动（float）?id=clear-技巧)
+关于 float 的坍缩，可参考：<a href="#/02-CSS/08-浮动（float）?id=clear-技巧" target="_blank">clear 技巧</a>
 
 ## 最终效果
 

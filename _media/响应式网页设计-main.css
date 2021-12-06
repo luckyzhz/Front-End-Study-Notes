@@ -1,0 +1,69 @@
+/* ------------ 网页整体设置 ------------ */
+
+/* 首先把盒模型设为 border-box，避免溢出。
+另外也设置动画过渡时长，使动画速度统一 */
+html {
+    box-sizing: border-box;
+    transition: all 0.5s;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    transition: inherit;
+}
+
+body {
+    /* margin 设为 0，从而可以让背景色铺满整个网页 */
+    margin: 0;
+    background: #f1f1f1;
+    /* 让网页各区块和浏览器边界有空隙 */
+    padding: 1rem;
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+
+/* ------------ 头部 ------------ */
+
+header {
+    padding: 2.4rem;
+    text-align: center;
+    background-color: white;
+}
+
+header>h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 3rem;
+}
+
+/* ------------ 卡片效果 ------------ */
+
+/* 给文章和侧边栏的区块添加卡片效果 */
+main>article, aside>section {
+    background-color: white;
+    padding: 1rem;
+    margin-top: 1rem;
+    box-shadow: 0.3rem 0.3rem 0.3rem gray;
+  }
+  
+  /* 文章卡片里的图片盒，侧边栏卡片里的图片盒 */
+  div.imgbox {
+    margin-top: 0.5rem;
+    background-color: #aaa;
+    width: 100%;
+    height: 12rem;
+  }
+  
+  /* ------------ 脚部 ------------ */
+  
+  footer {
+    margin-top: 1rem;
+    padding: 1.2rem;
+    text-align: center;
+    background-color: #ddd;
+  }
+  
+  footer>h2 {
+    margin: 0;
+    font-size: 1.5rem;
+  }

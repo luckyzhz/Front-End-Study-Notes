@@ -1,0 +1,80 @@
+/* ------------ 不需要导航栏开关图标 ------------ */
+
+input#nav-switch, label[for="nav-switch"] {
+    display: none;
+}
+
+/* ------------ 导航栏 ------------ */
+
+/* 导航栏 */
+nav {
+    background-color: #333;
+    margin-top: 0.5rem;
+}
+
+/* 因为 <nav> 的子元素都 float 了，
+因此必须利用 ::after 伪元素来撑起 <nav> 盒子，
+不然盒子高度就坍缩为 0 了 */
+nav::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* 不显示logo */
+nav>a:first-child {
+    display: none;
+}
+
+/* 导航栏里的链接 */
+nav>a:nth-child(n+2) {
+    display: block;
+    float: left;
+    padding: 0.8rem 1.2rem;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* 导航栏从第 3 个 <a> 元素开始，每个都添加左边框，实现链接的隔离 */
+nav>a:nth-child(n+3) {
+    border-left: dashed 1px white;
+}
+
+/* 把最后一个链接放到右边，让导航栏更均衡 */
+nav>a:last-child {
+    float: right;
+}
+
+/* 当鼠标悬浮在导航栏上的链接时，应该让链接变色 */
+nav>a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* ------------ 中间部分 ------------ */
+
+/* 因为 .container 的子元素都 float 了，
+因此必须利用 ::after 伪元素来撑起 .container 盒子，
+不然盒子高度就坍缩为 0 了 */
+.container::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* ------------ main 部分 ------------ */
+
+.container>main {
+    width: 75%;
+    float: left;
+}
+
+/* ------------ aside 部分 ------------ */
+
+.container>aside {
+    width: 25%;
+    float: left;
+    /* 和 main 部分留有空隙 */
+    padding-left: 1rem;
+}

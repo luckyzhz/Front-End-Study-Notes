@@ -26,5 +26,7 @@
   * [10-列表（list）样式](02-CSS/10-列表（list）样式.md)
   * [11-表格（table）样式](02-CSS/11-表格（table）样式.md)
   * [12-表单（form）样式](02-CSS/12-表单（form）样式.md)
+  * [13-背景（background）](02-CSS/13-背景（background）.md)
+  * [14-网页布局-float](02-CSS/14-网页布局-float.md)
 * 03-JavaScript
   * [01-JavaScript介绍](03-JavaScript/01-JavaScript介绍.md)

@@ -1,0 +1,134 @@
+/* ------------ 网页整体设置 ------------ */
+
+/* 首先把盒模型设为 border-box，避免溢出 */
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    /* margin 设为 0，从而可以让背景色铺满整个网页 */
+    margin: 0;
+    background: #f1f1f1;
+    /* 让网页各区块和浏览器边界有空隙 */
+    padding: 1rem;
+    font-family: sans-serif;
+}
+
+/* ------------ 头部 ------------ */
+
+header {
+    padding: 2.4rem;
+    text-align: center;
+    background-color: white;
+}
+
+header>h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+/* ------------ 导航栏 ------------ */
+
+/* 导航栏 */
+nav {
+    background-color: #333;
+    margin-top: 0.5rem;
+}
+
+/* 因为 <nav> 的子元素都 float 了，
+因此必须利用 ::after 伪元素来撑起 <nav> 盒子，
+不然盒子高度就坍缩为 0 了 */
+nav::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* 导航栏里的链接 */
+nav>a {
+    display: block;
+    float: left;
+    padding: 0.8rem 1.2rem;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* 导航栏从第二个 <a> 元素开始，每个都添加左边框，实现链接的隔离 */
+nav>a:nth-child(n+2) {
+    border-left: dashed 1px white;
+}
+
+/* 把最后一个链接放到右边，让导航栏更均衡 */
+nav>a:last-child {
+    float: right;
+}
+
+/* 当鼠标悬浮在导航栏上的链接时，应该让链接变色 */
+nav>a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* ------------ 中间部分 ------------ */
+
+/* 因为 .container 的子元素都 float 了，
+因此必须利用 ::after 伪元素来撑起 .container 盒子，
+不然盒子高度就坍缩为 0 了 */
+.container::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* ------------ main 部分 ------------ */
+
+.container>main {
+    width: 75%;
+    float: left;
+}
+
+/* ------------ aside 部分 ------------ */
+
+.container>aside {
+    width: 25%;
+    float: left;
+    /* 和 main 部分留有空隙 */
+    padding-left: 1rem;
+}
+
+/* ------------ 卡片效果 ------------ */
+
+/* 给文章和侧边栏的区块添加卡片效果 */
+main>article, aside>section {
+    background-color: white;
+    padding: 1rem;
+    margin-top: 1rem;
+    box-shadow: 0.3rem 0.3rem 0.3rem gray;
+}
+
+/* 文章卡片里的图片盒，侧边栏卡片里的图片盒 */
+div.imgbox {
+    margin-top: 0.5rem;
+    background-color: #aaa;
+    width: 100%;
+    height: 12rem;
+}
+
+/* ------------ 脚部 ------------ */
+
+footer {
+    margin-top: 1rem;
+    padding: 1.2rem;
+    text-align: center;
+    background-color: #ddd;
+}
+
+footer>h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}

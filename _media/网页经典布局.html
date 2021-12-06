@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网页经典布局</title>
+    <link rel="stylesheet" href="网页经典布局.css">
+</head>
+
+<body>
+    <!-- 网页头部 -->
+    <header>
+        <h1>网页经典布局</h1>
+    </header>
+
+    <!-- 导航栏 -->
+    <nav>
+        <a href="#">链接 1</a>
+        <a href="#">链接 2</a>
+        <a href="#">链接 3</a>
+        <a href="#">链接 4</a>
+    </nav>
+
+    <!-- float 属性把一个元素浮动到**所在容器**的左侧或右侧。
+    所以用一个容器把网页中间部分（<main> 和 <aside>）包裹起来，
+    避免中间部分浮动到别处和其他元素重叠 -->
+    <div class="container">
+        <main>
+            <!-- 网页主体部分一般包含多篇文章 -->
+            <article>
+                <h2>文章标题</h2>
+                <h5>文章描述，例如作者、日期</h5>
+                <div class="imgbox">图片</div>
+                <p>一些文本……</p>
+                <p>
+                    汉阳大学（韩语：한양대학교／漢陽大學校），简称汉大（韩语：한대／漢大），
+                    位于大韩民国首都首尔市，是一所创建于1939年的私立综合型大学。主校区位于
+                    首尔城东区杏堂洞（행당동），另有位于京畿道安山市的校舍。
+                </p>
+            </article>
+            <!-- 第二篇文章 -->
+            <article>
+                <h2>文章标题</h2>
+                <h5>文章描述，例如作者、日期</h5>
+                <div class="imgbox">图片</div>
+                <p>一些文本……</p>
+                <p>
+                    汉阳大学（韩语：한양대학교／漢陽大學校），简称汉大（韩语：한대／漢大），
+                    位于大韩民国首都首尔市，是一所创建于1939年的私立综合型大学。主校区位于
+                    首尔城东区杏堂洞（행당동），另有位于京畿道安山市的校舍。
+                </p>
+            </article>
+            <!-- 第三篇文章 -->
+            <article>
+                <h2>文章标题</h2>
+                <h5>文章描述，例如作者、日期</h5>
+                <div class="imgbox">图片</div>
+                <p>一些文本……</p>
+                <p>
+                    汉阳大学（韩语：한양대학교／漢陽大學校），简称汉大（韩语：한대／漢大），
+                    位于大韩民国首都首尔市，是一所创建于1939年的私立综合型大学。主校区位于
+                    首尔城东区杏堂洞（행당동），另有位于京畿道安山市的校舍。
+                </p>
+            </article>
+        </main>
+
+        <aside>
+            <!-- 侧边栏往往有多个卡片 -->
+            <section>
+                <h3>关于我</h3>
+                <div class="imgbox">图片</div>
+                <p>一些关于我的文本……</p>
+            </section>
+            <!-- 第二个卡片 -->
+            <section>
+                <h3>热门帖子</h3>
+                <div class="imgbox">图片</div>
+                <div class="imgbox">图片</div>
+                <div class="imgbox">图片</div>
+            </section>
+            <!-- 第三个卡片 -->
+            <section>
+                <h3>关注我</h3>
+                <p>一些文本……</p>
+            </section>
+        </aside>
+    </div>
+
+    <!-- 网页脚部 -->
+    <footer>
+        <h2>脚部。可以放置版权声明、日期等信息。</h2>
+    </footer>
+</body>
+
+</html>

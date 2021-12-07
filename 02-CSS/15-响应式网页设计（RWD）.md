@@ -101,10 +101,85 @@
 
 试着改变浏览器窗口宽度，来感受响应式网页设计的魅力。
 
+下面具体介绍如何改造。
 
+### HTML 的改变
 
+先考察 HTML 作了哪些改动。
 
+#### HTML `<head>` 的改变
 
+```html
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>响应式网页设计</title>
+
+    <!-- 移动端和桌面端共有的样式 -->
+    <link rel="stylesheet" href="响应式网页设计-main.css">
+    <!-- 视口宽度小于或等于 768px 时添加移动端样式 -->
+    <link rel="stylesheet" href="响应式网页设计-mobile.css" media="screen and (max-width: 768px)">
+    <!-- 视口宽度大于 768px 时添加桌面端样式 -->
+    <link rel="stylesheet" href="响应式网页设计-desktop.css" media="not screen and (max-width: 768px)">
+</head>
+```
+
+我们引入了三个 CSS，分别是：
+
+* `响应式网页设计-main.css`，这是移动端和桌面端共有的样式。
+* `响应式网页设计-mobile.css`，这是移动端特有的样式。
+  * 注意这里使用了媒体查询 `media="screen and (max-width: 768px)"`。
+* `响应式网页设计-desktop.css`，这是桌面端特有的样式。
+  * 注意这里使用了媒体查询 `media="not screen and (max-width: 768px)"`。
+
+这里可以得到的经验是：
+
+1. 我们不一定要在 CSS 文件里使用媒体查询，可以在链入 CSS 文件时再使用媒体查询。
+2. 如果移动端和桌面端样式差异较大，我们可以把 CSS 拆分成共有的部分，和各客户端各自对应的部分。这样可以避免样式混杂在一起，有利于代码维护。
+
+#### HTML `<body>` 的改变
+
+为了实现移动端导航栏的动态效果，我们在 `<header>` 和 `<nav>` 之间添加了以下代码：
+
+```html
+<!-- 利用 checkbox 的开关状态来对应导航栏开关状态。
+这部分只在移动端显示。 -->
+<input type="checkbox" id="nav-switch">
+<label for="nav-switch">
+    <img id="show-nav" src="../_logo/remixicon/menu-line.svg">
+    <img id="hide-nav" src="../_logo/remixicon/close-line.svg">
+    <div id="hide-nav-overlay"></div>
+</label>
+```
+
+为了控制导航栏的显示与否，必须有一个量来记录导航栏的显示状态。比较常规的做法是利用 JavaScript，直接设置一个量来记录显示状态（例如 0 代表关闭，1 代表开启）。
+
+但是在本例中，我们巧妙地利用了复选框 `<input type="checkbox">` 来记录导航栏的显示状态，因为复选框恰好有选中和不选中两种状态。
+
+那为什么要把这部分代码放在 `<header>` 和 `<nav>` 之间呢？因为，**CSS 没有父选择器**，所以我们把 `<input type="checkbox">` 作为 `<nav>` 的兄弟，以便后面可以通过 `<input type="checkbox">` 的伪类（即状态）选择到 `<nav>`，从而设置复选框特定状态下 `<nav>` 的样式。所以，我们不能把这部分代码用 `<div>` 包起来。
+
+另外，为了让移动端导航栏更美观，我们在 `<nav>` 里添加了 logo：
+
+```html
+<a href="#"><img alt="logo" src="../_logo/zhi-logo.svg"></a>
+```
+
+### CSS 的改变
+
+移动端和桌面端的差异：
+
+1. 导航栏。
+   * 移动端的导航栏被抽离出文档流，形成了一个动态的侧面板。
+2. 中间部分（文章和侧边栏）。
+   * 移动端对于中间部分只需要简单流动下来即可，而桌面端需要文章和侧边栏浮动并列。
+
+除此以外，其他部分的样式都是共享的。
+
+#### 共享的样式（`响应式网页设计-main.css`）
+
+#### 移动端特有的样式（`响应式网页设计-mobile.css`）
+
+#### 桌面端特有的样式（`响应式网页设计-desktop.css`）
 
 
 

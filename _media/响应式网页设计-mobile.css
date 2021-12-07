@@ -44,16 +44,17 @@ input#nav-switch {
 }
 
 /* 开关图标的共同样式 */
-label[for="nav-switch"]>i {
+label[for="nav-switch"]>img {
     display: inline-block;
     padding: 0.5rem;
-    font-size: 2rem;
+    width: 2rem;
 }
 
 /* 当鼠标悬浮在开关图标时，应该让开关图标变色 */
-label[for="nav-switch"]>i:hover {
-    background-color: rgba(32, 32, 32, 0.8);
-    color: white;
+label[for="nav-switch"]>img:hover {
+    background-color: gray;
+    /* 把图标颜色反转 */
+    filter: invert(100%);
 }
 
 /* ≡ 图标，用于打开导航栏 */

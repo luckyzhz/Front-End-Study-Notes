@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>响应式网页设计</title>
-    <!-- 引入 font-awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <!-- 移动端和桌面端共有的样式 -->
     <link rel="stylesheet" href="响应式网页设计-main.css">
     <!-- 视口宽度小于或等于 768px 时添加移动端样式 -->
@@ -21,14 +20,13 @@
         <h1>响应式网页设计</h1>
     </header>
 
-    <!-- 利用 checkbox 的开关状态来对应导航栏开关状态 -->
+    <!-- 利用 checkbox 的开关状态来对应导航栏开关状态。
+    这部分只在移动端显示。 -->
     <input type="checkbox" id="nav-switch">
     <label for="nav-switch">
-        <!-- 利用 font-awesome 产生开关图标 -->
-        <i id="show-nav" class="fa fa-bars" aria-hidden="true"></i>
-        <i id="hide-nav" class="fa fa-remove" aria-hidden="true"></i>
-        <!-- 遮罩层 -->
-        <i id="hide-nav-overlay"></i>
+        <img id="show-nav" src="../_logo/remixicon/menu-line.svg">
+        <img id="hide-nav" src="../_logo/remixicon/close-line.svg">
+        <div id="hide-nav-overlay"></div>
     </label>
 
     <!-- 导航栏 -->

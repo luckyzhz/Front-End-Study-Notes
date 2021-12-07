@@ -177,9 +177,220 @@
 
 #### 共享的样式（`响应式网页设计-main.css`）
 
+共享样式主要是添加了 CSS 动画过渡时间的继承：
+
+```css
+/* 首先把盒模型设为 border-box，避免溢出。
+另外也设置动画过渡时长，使动画速度统一 */
+html {
+    box-sizing: border-box;
+    transition: all 0.5s;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    transition: inherit;
+}
+```
+
 #### 移动端特有的样式（`响应式网页设计-mobile.css`）
 
+移动端特有的样式主要是是实现导航栏侧面板的动态效果：
+
+```css
+/* ------------ 导航栏 ------------ */
+
+nav {
+    /* 导航栏通高固定定位 */
+    position: fixed;
+    width: 75%;
+    height: 100%;
+    top: 0;
+    /* 一开始是隐藏的。隐藏的时候利用 left 属性定位，
+    则后面出现的时候同样要用 left 属性定位，才能实现动画。
+    可以理解为两个关键帧。 */
+    left: -75%;
+    background-color: rgba(255, 255, 255, 0.95);
+    text-align: center;
+}
+
+/* 导航栏里的链接 */
+nav>a:nth-child(n + 2) {
+    display: block;
+    width: 100%;
+    margin-top: 0.2rem;
+    padding: 1.2rem;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+}
+
+/* 当鼠标悬浮在导航栏上的链接时，应该让链接变色 */
+nav>a:nth-child(n + 2):hover {
+    background-color: #ddd;
+    color: black;
+}
+
+nav img[alt="logo"] {
+    width: 3rem;
+    margin: 1rem;
+}
+
+/* ------------ 导航栏开关图标 ------------ */
+
+/* 复选框不需要显示，只是用来记录开关状态 */
+input#nav-switch {
+    display: none;
+}
+
+/* 开关图标的共同样式 */
+label[for="nav-switch"]>img {
+    display: inline-block;
+    padding: 0.5rem;
+    width: 2rem;
+}
+
+/* 当鼠标悬浮在开关图标时，应该让开关图标变色 */
+label[for="nav-switch"]>img:hover {
+    background-color: gray;
+    /* 把图标颜色反转 */
+    filter: invert(100%);
+}
+
+/* ≡ 图标，用于打开导航栏 */
+#show-nav {
+    /* 这里 position 设为 absolute 而非 fixed，
+    则 ≡ 图标会随着滚动离开视口，避免挡住文章。 */
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+}
+
+/* X 图标，用于关闭导航栏 */
+#hide-nav {
+    position: fixed;
+    /* 设置 z-index，让 X 图标在导航栏上层 */
+    z-index: 1;
+    top: 1rem;
+    /* 一开始是隐藏的 */
+    right: calc(100% + 1rem);
+}
+
+/* 遮罩层，用于关闭导航栏 */
+#hide-nav-overlay {
+    position: fixed;
+    width: 25%;
+    height: 100%;
+    top: 0;
+    /* 一开始是隐藏的 */
+    right: -25%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* ------------ input#nav-switch:checked 时，导航栏开启 ------------ */
+
+/* 导航栏出现 */
+input#nav-switch:checked~nav {
+    left: 0;
+}
+
+/* X 图标出现 */
+input#nav-switch:checked~label[for="nav-switch"]>#hide-nav {
+    right: calc(25% + 1rem);
+}
+
+/* 遮罩层出现 */
+input#nav-switch:checked~label[for="nav-switch"]>#hide-nav-overlay {
+    right: 0;
+}
+```
+
 #### 桌面端特有的样式（`响应式网页设计-desktop.css`）
+
+桌面端特有的样式主要是处理导航栏和中间部分的浮动：
+
+```css
+/* ------------ 不需要导航栏开关图标 ------------ */
+
+input#nav-switch, label[for="nav-switch"] {
+    display: none;
+}
+
+/* ------------ 导航栏 ------------ */
+
+/* 导航栏 */
+nav {
+    background-color: #333;
+    margin-top: 0.5rem;
+}
+
+/* 因为 <nav> 的子元素都 float 了，
+因此必须利用 ::after 伪元素来撑起 <nav> 盒子，
+不然盒子高度就坍缩为 0 了 */
+nav::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* 不显示logo */
+nav>a:first-child {
+    display: none;
+}
+
+/* 导航栏里的链接 */
+nav>a:nth-child(n+2) {
+    display: block;
+    float: left;
+    padding: 0.8rem 1.2rem;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* 导航栏从第 3 个 <a> 元素开始，每个都添加左边框，实现链接的隔离 */
+nav>a:nth-child(n+3) {
+    border-left: dashed 1px white;
+}
+
+/* 把最后一个链接放到右边，让导航栏更均衡 */
+nav>a:last-child {
+    float: right;
+}
+
+/* 当鼠标悬浮在导航栏上的链接时，应该让链接变色 */
+nav>a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* ------------ 中间部分 ------------ */
+
+/* 因为 .container 的子元素都 float 了，
+因此必须利用 ::after 伪元素来撑起 .container 盒子，
+不然盒子高度就坍缩为 0 了 */
+.container::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* ------------ main 部分 ------------ */
+
+.container>main {
+    width: 75%;
+    float: left;
+}
+
+/* ------------ aside 部分 ------------ */
+
+.container>aside {
+    width: 25%;
+    float: left;
+    /* 和 main 部分留有空隙 */
+    padding-left: 1rem;
+}
+```
 
 
 

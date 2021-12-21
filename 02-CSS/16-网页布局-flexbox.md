@@ -13,7 +13,7 @@ flexbox（Flexible Box 模型的简称）是一种一维的布局模型，一次
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
-通常会使用一个 `<div>` 元素作为 flex 容器（flex container）。当把容器设为 `display: flex;` 或 `display: inline-flex;` （后面会解释这两种的区别），容器中的直系子元素（既儿子）就会变为 flex 项目（flex item）。
+通常会使用一个 `<div>` 元素作为 flex 容器（flex container）。当把容器设为 `display: flex;` 或 `display: inline-flex;` （后面会解释这两种的区别），容器中的直系子元素（既儿子）就会变为 flex 项目（flex items）。
 
 ## flexbox 的轴
 
@@ -126,7 +126,7 @@ flexbox 有两根轴，主轴（main axis）和交叉轴（cross axis）。主�
 
 `justify-content` 属性用来设置项目沿主轴方向的分布。
 
-`justify-content` 的属性很多，具体可参考：<https://developer.mozilla.org/zh-CN/docs/Web/CSS/justify-content>
+`justify-content` 的属性值很多，具体可参考：<https://developer.mozilla.org/zh-CN/docs/Web/CSS/justify-content>
 
 这里示例比较常用的：
 
@@ -145,7 +145,7 @@ flexbox 有两根轴，主轴（main axis）和交叉轴（cross axis）。主�
 
 <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="ZEXyKov" data-editable="true" data-user="luckyzhz" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/luckyzhz/pen/ZEXyKov">
-  16-网页布局-flexbox_4.1</a> by luckyzhz (<a href="https://codepen.io/luckyzhz">@luckyzhz</a>)
+  16-网页布局-flexbox_4.2</a> by luckyzhz (<a href="https://codepen.io/luckyzhz">@luckyzhz</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
@@ -154,7 +154,7 @@ flexbox 有两根轴，主轴（main axis）和交叉轴（cross axis）。主�
 
 <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="OJxgmEM" data-editable="true" data-user="luckyzhz" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/luckyzhz/pen/OJxgmEM">
-  16-网页布局-flexbox_4.2</a> by luckyzhz (<a href="https://codepen.io/luckyzhz">@luckyzhz</a>)
+  16-网页布局-flexbox_4.3</a> by luckyzhz (<a href="https://codepen.io/luckyzhz">@luckyzhz</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
@@ -163,7 +163,7 @@ flexbox 有两根轴，主轴（main axis）和交叉轴（cross axis）。主�
 
 <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="MWEomBO" data-editable="true" data-user="luckyzhz" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/luckyzhz/pen/MWEomBO">
-  16-网页布局-flexbox_4.3</a> by luckyzhz (<a href="https://codepen.io/luckyzhz">@luckyzhz</a>)
+  16-网页布局-flexbox_4.4</a> by luckyzhz (<a href="https://codepen.io/luckyzhz">@luckyzhz</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
@@ -172,7 +172,7 @@ flexbox 有两根轴，主轴（main axis）和交叉轴（cross axis）。主�
 
 <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="QWqgvVv" data-editable="true" data-user="luckyzhz" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/luckyzhz/pen/QWqgvVv">
-  16-网页布局-flexbox_4.4</a> by luckyzhz (<a href="https://codepen.io/luckyzhz">@luckyzhz</a>)
+  16-网页布局-flexbox_4.5</a> by luckyzhz (<a href="https://codepen.io/luckyzhz">@luckyzhz</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
@@ -181,15 +181,146 @@ flexbox 有两根轴，主轴（main axis）和交叉轴（cross axis）。主�
 
 <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="qBPjmMg" data-editable="true" data-user="luckyzhz" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/luckyzhz/pen/qBPjmMg">
-  16-网页布局-flexbox_4.5</a> by luckyzhz (<a href="https://codepen.io/luckyzhz">@luckyzhz</a>)
+  16-网页布局-flexbox_4.6</a> by luckyzhz (<a href="https://codepen.io/luckyzhz">@luckyzhz</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 <!-- tabs:end -->
 
+## 多行垂直对齐（align-content）
 
+当 flexbox 有多行时，使用 `align-content` 属性设置多行的对齐。
 
+`align-content` 的属性值很多，具体可参考：<https://developer.mozilla.org/zh-CN/docs/Web/CSS/align-content>
+
+这里示例比较常用的：
+
+<!-- tabs:start -->
+
+#### **start**
+
+<p class="codepen" data-height="400" data-default-tab="html,result" data-slug-hash="GRMvNWL" data-editable="true" data-user="luckyzhz" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/luckyzhz/pen/GRMvNWL">
+  16-网页布局-flexbox_5.1</a> by luckyzhz (<a href="https://codepen.io/luckyzhz">@luckyzhz</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+#### **end**
+
+<p class="codepen" data-height="400" data-default-tab="html,result" data-slug-hash="wvrqoOG" data-editable="true" data-user="luckyzhz" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/luckyzhz/pen/wvrqoOG">
+  16-网页布局-flexbox_5.2</a> by luckyzhz (<a href="https://codepen.io/luckyzhz">@luckyzhz</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+#### **center**
+
+<p class="codepen" data-height="400" data-default-tab="html,result" data-slug-hash="zYEdobj" data-editable="true" data-user="luckyzhz" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/luckyzhz/pen/zYEdobj">
+  16-网页布局-flexbox_5.3</a> by luckyzhz (<a href="https://codepen.io/luckyzhz">@luckyzhz</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+#### **space-between**
+
+<p class="codepen" data-height="400" data-default-tab="html,result" data-slug-hash="WNZEoWo" data-editable="true" data-user="luckyzhz" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/luckyzhz/pen/WNZEoWo">
+  16-网页布局-flexbox_5.4</a> by luckyzhz (<a href="https://codepen.io/luckyzhz">@luckyzhz</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+#### **space-around**
+
+<p class="codepen" data-height="400" data-default-tab="html,result" data-slug-hash="ExwvNJp" data-editable="true" data-user="luckyzhz" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/luckyzhz/pen/ExwvNJp">
+  16-网页布局-flexbox_5.5</a> by luckyzhz (<a href="https://codepen.io/luckyzhz">@luckyzhz</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+#### **space-evenly**
+
+<p class="codepen" data-height="400" data-default-tab="html,result" data-slug-hash="OJxjbYM" data-editable="true" data-user="luckyzhz" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/luckyzhz/pen/OJxjbYM">
+  16-网页布局-flexbox_5.6</a> by luckyzhz (<a href="https://codepen.io/luckyzhz">@luckyzhz</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+#### **stretch**
+
+<p class="codepen" data-height="400" data-default-tab="html,result" data-slug-hash="eYGEgOM" data-editable="true" data-user="luckyzhz" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/luckyzhz/pen/eYGEgOM">
+  16-网页布局-flexbox_5.7</a> by luckyzhz (<a href="https://codepen.io/luckyzhz">@luckyzhz</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+<!-- tabs:end -->
+
+## 行内垂直对齐（align-items）
+
+用 `align-items` 属性设置项目在行内垂直方向上的对齐。对单行的 flexbox （即 `flex-wrap: nowrap;`）也起作用。
+
+`align-items` 的属性值很多，具体可参考：<https://developer.mozilla.org/zh-CN/docs/Web/CSS/align-items>
+
+这里示例比较常用的：
+
+<!-- tabs:start -->
+
+#### **start**
+
+<p class="codepen" data-height="400" data-default-tab="html,result" data-slug-hash="ZEXJJVb" data-editable="true" data-user="luckyzhz" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/luckyzhz/pen/ZEXJJVb">
+  16-网页布局-flexbox_6.1</a> by luckyzhz (<a href="https://codepen.io/luckyzhz">@luckyzhz</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+#### **end**
+
+<p class="codepen" data-height="400" data-default-tab="html,result" data-slug-hash="OJxjjda" data-editable="true" data-user="luckyzhz" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/luckyzhz/pen/OJxjjda">
+  16-网页布局-flexbox_6.2</a> by luckyzhz (<a href="https://codepen.io/luckyzhz">@luckyzhz</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+#### **center**
+
+<p class="codepen" data-height="400" data-default-tab="html,result" data-slug-hash="ZEXJJPQ" data-editable="true" data-user="luckyzhz" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/luckyzhz/pen/ZEXJJPQ">
+  16-网页布局-flexbox_6.3</a> by luckyzhz (<a href="https://codepen.io/luckyzhz">@luckyzhz</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+#### **stretch**
+
+<p class="codepen" data-height="400" data-default-tab="html,result" data-slug-hash="OJxjjqr" data-editable="true" data-user="luckyzhz" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/luckyzhz/pen/OJxjjqr">
+  16-网页布局-flexbox_6.4</a> by luckyzhz (<a href="https://codepen.io/luckyzhz">@luckyzhz</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+<!-- tabs:end -->
+
+## 完美居中
+
+利用 flexbox 可以很容易实现完美居中。例如：
+
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="dyVzVXK" data-editable="true" data-user="luckyzhz" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/luckyzhz/pen/dyVzVXK">
+  16-网页布局-flexbox_7</a> by luckyzhz (<a href="https://codepen.io/luckyzhz">@luckyzhz</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 
 

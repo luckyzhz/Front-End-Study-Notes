@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 820 130" style="enable-background:new 0 0 820 130;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#6A9400;stroke-dasharray:1,1;}
+	.st1{font-family:'CourierNewPS-BoldMT';}
+	.st2{font-size:13px;}
+	.st3{font-family:'ArialMT';}
+	.st4{font-size:10px;}
+	.st5{fill:none;stroke:#CECECE;}
+	.st6{fill:none;stroke:#6EAE00;stroke-width:2;}
+	.st7{fill:none;stroke:#0035FF;stroke-width:2;}
+	.st8{fill:none;stroke:#FF0000;stroke-width:2;}
+	.st9{fill:#6EAE00;stroke:#6EAE00;}
+	.st10{fill:#0035FF;stroke:#0035FF;}
+	.st11{fill:#FF0000;stroke:#FF0000;}
+</style>
+<g>
+	<line class="st0" x1="0" y1="33.5" x2="820" y2="33.5"/>
+	<line class="st0" x1="0" y1="66.5" x2="820" y2="66.5"/>
+	<line class="st0" x1="245.5" y1="1" x2="245.5" y2="29"/>
+	<line class="st0" x1="245.5" y1="38" x2="245.5" y2="62"/>
+	<line class="st0" x1="245.5" y1="68" x2="245.5" y2="95"/>
+</g>
+<g>
+	<text transform="matrix(1 0 0 1 12 16.75)" class="st1 st2">&lt;script&gt;</text>
+	<g transform="translate(252,0)">
+		<text transform="matrix(1 0 0 1 0 9)" class="st3 st4">Scripting:</text>
+		<text transform="matrix(1 0 0 1 0 24)" class="st3 st4">HTML Parser:</text>
+		<line class="st5" x1="257" y1="9" x2="257" y2="24"/>
+		<line class="st5" x1="404" y1="9" x2="404" y2="24"/>
+		<line class="st6" x1="106" y1="24" x2="257" y2="24"/>
+		<line class="st7" x1="257" y1="9" x2="354" y2="9"/>
+		<line class="st8" x1="354" y1="9" x2="404" y2="9"/>
+		<line class="st6" x1="404" y1="24" x2="532" y2="24"/>
+	</g>
+</g>
+<g transform="translate(0,33)">
+	<text transform="matrix(1 0 0 1 12 16.75)" class="st1 st2">&lt;script defer&gt;</text>
+	<g transform="translate(252,0)">
+		<text transform="matrix(1 0 0 1 0 9)" class="st3 st4">Scripting:</text>
+		<text transform="matrix(1 0 0 1 0 24)" class="st3 st4">HTML Parser:</text>
+		<line class="st5" x1="484" y1="9" x2="484" y2="24"/>
+		<line class="st6" x1="106" y1="24" x2="484" y2="24"/>
+		<line class="st7" x1="257" y1="9" x2="354" y2="9"/>
+		<line class="st8" x1="484" y1="9" x2="532" y2="9"/>
+	</g>
+</g>
+<g transform="translate(0,66)">
+	<text transform="matrix(1 0 0 1 12 16.75)" class="st1 st2">&lt;script async&gt;</text>
+	<g transform="translate(252,0)">
+		<text transform="matrix(1 0 0 1 0 9)" class="st3 st4">Scripting:</text>
+		<text transform="matrix(1 0 0 1 0 24)" class="st3 st4">HTML Parser:</text>
+		<line class="st5" x1="354" y1="9" x2="354" y2="24"/>
+		<line class="st5" x1="404" y1="9" x2="404" y2="24"/>
+		<line class="st6" x1="106" y1="24" x2="354" y2="24"/>
+		<line class="st7" x1="257" y1="9" x2="354" y2="9"/>
+		<line class="st8" x1="354" y1="9" x2="404" y2="9"/>
+		<line class="st6" x1="404" y1="24" x2="532" y2="24"/>
+	</g>
+</g>
+<g transform="translate(357.5,172)">
+	<circle class="st9" cx="3" cy="-45.2" r="3"/>
+	<text transform="matrix(1 0 0 1 9 -45.2476)" class="st3 st4">parser</text>
+	<circle class="st10" cx="50" cy="-45.2" r="3"/>
+	<text transform="matrix(1 0 0 1 56 -45.2476)" class="st3 st4">fetch</text>
+	<circle class="st11" cx="90" cy="-45.2" r="3"/>
+	<text transform="matrix(1 0 0 1 96 -45.2476)" class="st3 st4">execution</text>
+</g>
+<text transform="matrix(1 0 0 1 735.877 126.7524)" class="st3 st4">runtime →</text>
+</svg>

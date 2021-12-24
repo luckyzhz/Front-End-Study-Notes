@@ -34,3 +34,4 @@
 * 03-JavaScript
   * [01-JavaScript介绍](03-JavaScript/01-JavaScript介绍.md)
   * [02-如何引入JavaScript](03-JavaScript/02-如何引入JavaScript.md)
+  * [03-基本语法和数据类型](03-JavaScript/03-基本语法和数据类型.md)

@@ -99,9 +99,68 @@ myDog["7"];             // "seven"
 
 注意：不要在语句的开头使用对象字面量！否则 `{` 将被解释为语句块的开头。
 
+## 正则表达式字面量（RegExp literals）
 
+正则表达式字面量是包含在斜杠 `/` 之间的模式。例如：
 
+```js
+let re = /ab+c/;
+```
 
+关于正则表达式，后面会有专门章节讲解。
+
+## 字符串字面量（String literals）
+
+字符串字面量是用双引号 `"` 或单引号 `'` 括起来的零个或多个字符。例如：
+
+```js
+'foo';
+"bar";
+'1234';
+'one line \n another line';
+"John's cat";
+```
+
+使用 `.length` 来获取字符串长度，例如：
+
+```js
+"John's cat".length;  // 10
+```
+
+JS 也支持字符串模板，使用反引号 <code>`</code> 括起来（注意反引号不是单引号）。例如：
+
+```js
+// 在字符串模板里，可以自由使用单引号、双引号
+// 结果是 In JavaScript '\n' is a line-feed.
+`In JavaScript '\\n' is a line-feed.`
+
+// 多行字符串
+`In JavaScript, template strings can run
+ over multiple lines, but double and single
+ quoted strings cannot.`
+
+// 字符串插值。${变量} 会解释为变量值
+let name = 'Bob', time = 'today';
+`Hello ${name}, how are you ${time}?`     // 'Hello Bob, how are you today?'
+```
+
+转义字符。当我们想在字符串中表达特殊字符时，可使用反斜杠 `\` 转义。例如：
+
+```js
+// 当想在双引号里表达双引号时，需要用 \ 转义
+// 结果是 He read "The Cremation of Sam McGee" by R.W. Service.
+"He read \"The Cremation of Sam McGee\" by R.W. Service.";
+
+// 结果是 c:\temp
+'c:\\temp';
+
+// 还可以通过在换行符前面加上反斜杠来转义换行符。反斜杠和换行符都从字符串的值中删除。可以看成“续行符”
+// 结果是 this string is broken across multiple lines.
+'this string \
+is broken \
+across multiple \
+lines.'
+```
 
 
 

@@ -2,6 +2,10 @@
 
 > 记录学习经验，为新手提供入门参考，为老鸟提供备忘
 
+## 博客地址
+
+<https://luckyzhz.github.io/front-end-study-notes/>
+
 ## 项目地址
 
 <https://github.com/luckyzhz/front-end-study-notes>

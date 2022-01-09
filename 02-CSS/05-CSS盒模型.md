@@ -11,7 +11,7 @@ CSS 标准盒模型由 4 部分组成：
 
 如图：
 
-![CSS 盒模型](../_images/CSS_box.png ':size=400')
+![CSS 盒模型](../_images/CSS_box.svg ':size=400')
 
 注意，在标准模型中，`width` 和 `height` 设置的是 content box。整个盒子的大小还要加上 padding 和 border。
 

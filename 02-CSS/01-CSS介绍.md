@@ -14,7 +14,7 @@ CSS 是“层叠样式表”（Cascading Style Sheets）的缩写。“样式”
 
 CSS 的基本语法结构如下：
 
-![CSS基本语法结构](../_images/CSS基本语法结构.png ':size=600')
+![CSS基本语法结构](../_images/CSS基本语法结构.svg ':size=600')
 
 
 

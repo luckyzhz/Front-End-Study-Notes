@@ -38,3 +38,4 @@
   * [04-字面量（Literals）](03-JavaScript/04-字面量（Literals）.md)
   * [05-流程控制与错误处理](03-JavaScript/05-流程控制与错误处理.md)
   * [06-函数](03-JavaScript/06-函数.md)
+  * [07-面向对象](03-JavaScript/07-面向对象.md)

@@ -57,7 +57,7 @@ JavaScript 整数有多种基，浮点数只有十进制。为了避免混乱，
   * `0o5` = `0O5` = `5`，`0o11` = `0O11` = `9`
 * 二进制（binary，基数 2）整数，以 `0b` 开头，可以使用 `0~1`，字母大小写都可以。例如：
   * `0b1` = `0B1` = `1`，`0b101` = `0B101` = `5`
-* 大整数（BigInt），以 `n` 结尾，可以使用上面罗列的任意一种基。例如：
+* 大整数（bigint），以 `n` 结尾，可以使用上面罗列的任意一种基。例如：
   * `123456789123456789n`，`0x123456789ABCDEFn`，`0o777777777777n`，`0b11101001010101010101n`
 
 ### 浮点数字面量（Floating-point literals）
@@ -93,7 +93,7 @@ myDog["hello world"];   // 11
 myDog["7"];             // "seven"
 
 // 另外，属性值还可以是函数的调用，例如：
-// const myObj = {hello: foo()};
+// const myObj = { hello: foo() };
 // 属性值也可以是对象，从而形成对象的嵌套
 ```
 
@@ -132,7 +132,7 @@ JS 也支持字符串模板，使用反引号 <code>`</code> 括起来（注意�
 ```js
 // 在字符串模板里，可以自由使用单引号、双引号
 // 结果是 In JavaScript '\n' is a line-feed.
-`In JavaScript '\\n' is a line-feed.`
+console.log(`In JavaScript '\\n' is a line-feed.`);
 
 // 多行字符串
 `In JavaScript, template strings can run

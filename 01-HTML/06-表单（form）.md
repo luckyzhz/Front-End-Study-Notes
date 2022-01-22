@@ -67,8 +67,8 @@
    * `type="submit"`，默认值，此按钮将表单数据提交给服务器。
    * `type="reset"`，此按钮重置所有组件为初始值。
    * `type="button"`，此按钮没有默认行为，由 JavaScript 编写其行为。
-2. `form`，指定 `<button>` 关联的表单，值是表单 id。如果此属性未指定，`<button>` 元素必须是 form 元素的后代。利用此属性，可以将 `<button>` 元素放置在文档内的任何位置，而不仅仅是作为他们 form 元素的后代。
-   * `form="customer"`，把 `<button>` 关联到 id 为 customer 的表单。
+2. `form`，指定 `<button>` 关联的表单，值是表单 `id`。如果此属性未指定，`<button>` 元素必须是 form 元素的后代。利用此属性，可以将 `<button>` 元素放置在文档内的任何位置，而不仅仅是作为他们 form 元素的后代。
+   * 例如 `form="customer"`，把 `<button>` 关联到 id 为 customer 的表单。
 
 `<button>` 相比 `<input type="button">` 的优点：
 

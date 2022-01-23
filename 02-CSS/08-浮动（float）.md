@@ -2,7 +2,7 @@
 
 ## 浮动（float）基本概念
 
-可以用 `float` 属性把一个元素浮动到**所在容器**的左侧或右侧。此时，浮动的元素会脱离正常文档流。例如：
+可以用 `float` 属性把一个元素浮动到**所在容器**的左侧或右侧。此时，**浮动的元素会脱离正常文档流**。例如：
 
 <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="jOGNzyN" data-editable="true" data-user="luckyzhz" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/luckyzhz/pen/jOGNzyN">
@@ -35,7 +35,7 @@
 
 ## 多个浮动元素
 
-当一个元素浮动之后，它会被移出正常的文档流，然后向左或者向右平移，一直平移直到碰到了所处容器的**边框**，或者碰到**另外一个浮动的元素**。例如：
+当一个元素浮动之后，它会被移出正常的文档流，然后向左或者向右平移，一直平移直到碰到所处容器的**边框**，或者碰到**另一个浮动的元素**。例如：
 
 <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="RwLbMEE" data-editable="true" data-user="luckyzhz" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/luckyzhz/pen/RwLbMEE">
@@ -74,7 +74,7 @@
 
 ## `clear` 技巧
 
-如果一个元素里只有浮动元素，那它的高度会是 0，因为没有正常文档流撑起高度。为了使这个元素自适应包含其内部的所有浮动元素，我们可以利用其 `::after` 伪元素。
+如果一个容器里只有浮动元素，那它的高度会是 0，因为**没有正常文档流撑起高度**。为了使这个容器自适应包含其内部的所有浮动元素，我们可以利用其 `::after` 伪元素。
 
 *（`::after` **创建**一个伪元素，作为已选中元素的**最后一个子元素**）*
 

@@ -8,7 +8,7 @@ CSS `position` 属性用于指定一个元素在文档中的**定位方式**。`
 
 `position: relative;` 表示相对定位。相对定位的元素依然会在正常文档流占有位置。
 
-所谓“相对”，是指偏离于原来在正常文档流中应处的位置。例如：
+所谓“相对”，是指**偏离于原来在正常文档流中应处的位置**。例如：
 
 <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="VwMZgdP" data-editable="true" data-user="luckyzhz" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/luckyzhz/pen/VwMZgdP">
@@ -17,13 +17,13 @@ CSS `position` 属性用于指定一个元素在文档中的**定位方式**。`
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
-可以看到，第二个盒子依然占有原来的位置，偏移量是相对原来位置的。
+可以看到，第二个盒子**依然占有原来的位置**，偏移量是相对原来位置的。
 
-另外注意，`top`，`right`，`bottom` 和 `left` 属性值可以是负数，意味着向相反方向偏移。
+另外注意，`top`，`right`，`bottom` 和 `left` 属性值可以是**负数**，意味着向相反方向偏移。
 
 ## 绝对定位（absolute）
 
-`position: absolute;` 表示相对定位。绝对定位的元素会被完全移出正常文档流，并且不为元素预留空间。也就是说，对于正常文档流来说，绝对定位的元素相当于不存在。例如：
+`position: absolute;` 表示绝对定位。绝对定位的元素会被完全移出正常文档流，并且**不为元素预留空间**。也就是说，对于正常文档流来说，绝对定位的元素相当于不存在。例如：
 
 <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="dyVbrZd" data-editable="true" data-user="luckyzhz" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/luckyzhz/pen/dyVbrZd">
@@ -42,7 +42,7 @@ CSS `position` 属性用于指定一个元素在文档中的**定位方式**。`
 
 ## 固定定位（fixed）
 
-`position: fixed;` 表示固定定位。固定定位的元素会被完全移出正常文档流，并且不为元素预留空间。同样，对于正常文档流来说，固定定位的元素相当于不存在。例如：
+`position: fixed;` 表示固定定位。固定定位的元素会被完全移出正常文档流，并且**不为元素预留空间**。同样，对于正常文档流来说，固定定位的元素相当于不存在。例如：
 
 <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="XWerQQx" data-editable="true" data-user="luckyzhz" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/luckyzhz/pen/XWerQQx">
@@ -79,7 +79,7 @@ CSS `position` 属性用于指定一个元素在文档中的**定位方式**。`
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
-需要特别注意的是，每个 `<dt>` 都归属于单独的 `<dl>`。
+需要特别注意的是，上例中每个 `<dt>` 都归属于单独的 `<dl>`。
 
 也就是说，上例中**每个粘性定位元素都有独属的父元素**。
 

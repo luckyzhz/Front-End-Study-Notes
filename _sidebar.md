@@ -40,3 +40,5 @@
   * [06-函数](03-JavaScript/06-函数.md)
   * [07-面向对象](03-JavaScript/07-面向对象.md)
   * [08-箭头函数](03-JavaScript/08-箭头函数.md)
+  * [09-字符串方法](03-JavaScript/09-字符串方法.md)
+  * [10-正则表达式](03-JavaScript/10-正则表达式.md)
